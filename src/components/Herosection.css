@@ -1,0 +1,46 @@
+.hero-bg-1 {
+  background-color: #271b35;
+}
+
+.hero-bg-2 {
+  background-color: #1a1a1a;
+}
+
+.hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 1.5rem 1.5rem;
+  font-size: 1.5rem;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.hero-arrow.left {
+  left: 0;
+}
+
+.hero-arrow.right {
+  right: 0;
+}
+
+.hero-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hero-dot.active {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.hero-img {
+  max-height: 500px;
+}
