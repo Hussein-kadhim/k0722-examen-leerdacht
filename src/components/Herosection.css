@@ -1,9 +1,85 @@
+.hero {
+  position: relative;
+  color: white;
+}
+
 .hero-bg-1 {
   background-color: #271b35;
 }
 
 .hero-bg-2 {
   background-color: #1a1a1a;
+}
+
+.hero-container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.hero-title-box {
+  background-color: #0d6efd;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+}
+
+.hero-subtitle-wrap {
+  margin-top: 0.75rem;
+}
+
+.hero-subtitle-box {
+  background-color: black;
+  color: white;
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.hero-btn {
+  border: 2px solid white;
+  color: white;
+  background: none;
+  padding: 0.75rem 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.hero-btn:hover {
+  background-color: white;
+  color: #212529;
+}
+
+.hero-image-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: right;
+}
+
+.hero-img {
+  max-height: 500px;
 }
 
 .hero-arrow {
@@ -27,6 +103,13 @@
   right: 0;
 }
 
+.hero-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  padding-bottom: 1.5rem;
+}
+
 .hero-dot {
   width: 16px;
   height: 16px;
@@ -41,6 +124,26 @@
   border-color: #0d6efd;
 }
 
-.hero-img {
-  max-height: 500px;
+@media (max-width: 768px) {
+  .hero-content,
+  .hero-image-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-title-box {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }
