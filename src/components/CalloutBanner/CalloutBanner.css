@@ -1,0 +1,66 @@
+.callout-banner {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 2rem 0;
+}
+
+.callout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.callout-text-group {
+  display: flex;
+  align-items: baseline;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.callout-heading {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #f59e0b;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.callout-description {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.callout-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f59e0b;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.85rem 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.callout-btn:hover {
+  background-color: #d97706;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .callout-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
